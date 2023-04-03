@@ -1,0 +1,29 @@
+texttovoice:
+   api_key: ""
+   api_secret:  ""
+   youdao_url:  "https://openapi.youdao.com/ttsapi"
+server:
+   port: 8081
+spring:
+   security:
+      user:
+         name: admin
+         password: 123456
+   datasource:
+      druid:
+         driver-class-name: com.mysql.cj.jdbc.Driver
+         url: jdbc:mysql://localhost:13306/sixlevel?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+         username: root
+         password: 317900abc
+   data:
+      redis:
+         port: 6379
+
+token:
+   secret: abcdefghijklmnopqrstuvwxyz
+   headName: Authorization
+##MyBatis-Plus相关配置
+#mybatis-plus:
+#   configuration:
+#      #配置日志
+#      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
